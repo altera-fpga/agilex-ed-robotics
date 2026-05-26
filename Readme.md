@@ -24,7 +24,7 @@ designs.
 * **modular_design_toolkit**: This is an instance of the "Modular Design Toolkit" (MDT)
   repository to create and build Quartus® Prime and Platform Designer projects. You must use
   `--recurse-submodules` when cloning this repository to populate the MDT sources.
-  See [modular_design_toolkit](https://github.com/intel-innersource/applications.fpga.reference-designs.projects.modular-design-toolkit)
+  See [modular_design_toolkit](https://github.com/altera-fpga/modular-design-toolkit)
   to know more.
 
 MDT is currently available in Linux.
