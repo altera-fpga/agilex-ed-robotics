@@ -1,0 +1,47 @@
+/*
+* ISP frame writer device tree fragment for Agilex 5
+*/
+
+/{
+	soc@0 {
+		frame_writer_rgb: frame_writer@20300200 {
+			compatible = "generic-uio";
+			reg = <0x20300200 0x198>, <0x60000000 0x17BB00>;
+			reg-names = "ctrl","buffer";
+			interrupt-parent = <&intc>;
+			interrupts = <0 17 1>;
+		};
+
+		frame_writer_gs: frame_writer@20300800 {
+			compatible = "generic-uio";
+			reg = <0x20300800 0x198>, <0x60200000 0x17BB00>;
+			reg-names = "ctrl","buffer";
+			interrupt-parent = <&intc>;
+			interrupts = <0 18 1>;
+		};
+
+		marker_ctrl: marker_ctrl@20300600 {
+			compatible = "generic-uio";
+			reg = <0x20300600 0x4>;
+		};
+
+		doc0: doc@20080000 {
+			compatible = "generic-uio";
+			reg = <0x20080000 0x108>,<0x20080108 0x108>;
+			reg-names = "axis0","axis1";
+		};
+
+		doc1: doc@20180000 {
+			compatible = "generic-uio";
+			reg = <0x20180000 0x108>,<0x20180108 0x108>;
+			reg-names = "axis0","axis1";
+		};
+
+		doc2: doc@20280000 {
+			compatible = "generic-uio";
+			reg = <0x20280000 0x108>,<0x20280108 0x108>;
+			reg-names = "axis0","axis1";
+		};
+
+	};
+};
