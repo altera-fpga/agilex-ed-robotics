@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<library>
+<index file="altera_rob_aruco/altera_rob_aruco_algo_comp_hw.tcl" />
+<index file="altera_rob_aruco/altera_rob_aruco_scheduler_hw.tcl" />
+<index file="altera_rob_aruco/altera_rob_aruco_hw.tcl" />
+</library>
