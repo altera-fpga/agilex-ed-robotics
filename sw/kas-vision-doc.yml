@@ -1,0 +1,30 @@
+header:
+  version: 17
+  includes:
+    - repo: meta-altera-fpga
+      file: kas/base.yml
+    - repo: meta-altera-fpga
+      file: kas/oe-core.yml
+    - repo: meta-altera-fpga
+      file: kas/dev.yml
+    - repo: meta-altera-fpga
+      file: kas/docker.yml
+repos:
+  meta-altera-fpga:
+    path: ./meta-altera-fpga
+    layers:
+      meta-altera-bsp:
+      meta-altera-core:
+      meta-altera-devkit:
+      meta-altera-vendor:
+  meta-robotics-camera:
+    path: ./meta-robotics-camera
+local_conf_header:
+  example_project: |
+    IMAGE_INSTALL:append = " expand-root-partition"
+    SOCFPGA_FEATURES += "bitstream uio rt"
+    IMAGE_BOOT_ARGS:append = " uio_pdrv_genirq.of_id=generic-uio"
+    MACHINE = "agilex5_mk_a5e065bb32aea"
+    FPGA_BST_SRC_URI = "file://top.core.rbf"
+    FPGA_BST_SHA256SUM = ""
+    DT_SRC_URI = "file://agilex5-robotics-camera.dtsi"
