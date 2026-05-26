@@ -436,7 +436,7 @@ void arUco_ctrl() {
 
     if (request == 1) {
 
-        int placed = pixels_place_squares_random(&cfg, n_layers, squares, 2u);
+        int placed = pixels_place_squares_random(&cfg, n_layers-1, squares, 2u);
         for (int i = 0; i < placed; i++) {
             /* squares[i].x, squares[i].y top-left; .w and .h == 144 */
             intel_vvp_mixer_set_horiz_offset(&mixer_rob, i + 1, squares[i].x);

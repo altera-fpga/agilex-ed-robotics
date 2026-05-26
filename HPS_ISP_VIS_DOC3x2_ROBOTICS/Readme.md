@@ -61,6 +61,9 @@ quartus_sh -t ./modular_design_toolkit/scripts/create/create_shell.tcl \
    -proj_path <project> -o
 ```
 
+**Note:** optionally use `-jvm_max_heap 20G` at the end of the previous command to allocate more memory to
+Platform Designer subsystem creation.
+
 This will create your Quartus® Prime and Platform Designer Project in \<project>. The folder structure is consistent
 with the "Modular Design Toolkit" methodology.
 

@@ -14,10 +14,13 @@ designs.
   Suitable to integrate with higher-level software applications like ROS2 for
   robotics manipulation.
   See [HPS_ISP_CAM_ROBOTICS](./HPS_ISP_CAM_ROBOTICS) to create and build.
+  System Example Design using this hardware: [Robotics Camera System Example Design for Agilex™ 5 Devices](https://altera-fpga.github.io/latest/embedded-designs/agilex-5/e-series/modular-065b/robotics/robotics-camera/)
+
 * **HPS_ISP_VIS_DOC3x2_ROBOTICS**: Robotics Vision pipeline implemented in FPGA with
   6-axis FOC. AruCO marker inyection in the video pipeline to mimic robot
   manipulation applications.
   See [HPS_ISP_VIS_DOC3x2_ROBOTICS](./HPS_ISP_VIS_DOC3x2_ROBOTICS) to create and build.
+  System Example Design using this hardware: [Robot Controller with Vision System Example Design for Agilex™ 5 Devices](https://altera-fpga.github.io/latest/embedded-designs/agilex-5/e-series/modular-065b/robotics/robotics-vision-doc/)
 
 ## Supporting Repositories
 
