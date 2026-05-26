@@ -23,7 +23,7 @@ For example:
 
 ```bash
 cd <this_repository>/sw/
-KAS_MACHINE=agilex5_mk_a5e065bb32aea kas build kas_vision_doc.yml
+KAS_MACHINE=agilex5_mk_a5e065bb32aea kas build kas-vision-doc.yml
 ```
 
 See above for a list of supported `MACHINE` and `DESIGN` identifiers.
